@@ -1,0 +1,26 @@
+<%= form_for(@vehicle) do |f| %>
+  <p>
+    <%= f.label :make %><br/>
+    <%= f.text_field :make, autofocus: true%>
+  </p>
+  <p>
+    <%= f.label :model %><br/>
+    <%= f.text_field :model %>
+  </p>
+  <p>
+    <%= f.label :year %><br/>
+    <%= f.number_field :year, default: 2018%>
+  </p>
+  <p>
+    <%= f.label :date_arrived_on_lot %><br/>
+    <%= f.datetime_select :on_lot_at %>
+  </p>
+  <p>
+    <%= f.label :price %><br/>
+    <%= f.number_field :price, default: 0 %>
+  </p>
+  <p>
+    <%= f.submit %>
+    <% link_to "Cancel", vehicles_path %>
+  </p>
+<% end %>

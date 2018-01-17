@@ -1,0 +1,23 @@
+<article>
+  <header>
+    <h1><%= @vehicle.title %></h1>
+  </header>
+  <h2>Miles:<h2>
+  <p>
+    <%= format_miles(@vehicle) %>
+  </p>
+  <h3>Arrived on Lot:</h3>
+  <p>
+    <%= @vehicle.on_lot_at %>
+  </p>
+  <h3>Price:</h3>
+  <p>
+    <%= format_price(@vehicle) %>
+  </p>
+</article>
+
+
+<nav>
+<%= link_to "All Vehicles", root_path %>  |
+<%= link_to "Edit", edit_vehicle_path(@vehicle) %>
+</nav>

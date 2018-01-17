@@ -1,0 +1,81 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  make: MyString
+  model: MyString
+  miles: 1
+  vin: MyString
+  body_description: MyString
+  body_style: MyString
+  body_door_count: 1
+  city_mpg: 1
+  highway_mpg: 1
+  classification: MyString
+  drive_train_description: MyString
+  drive_train_type: MyString
+  drive_train_wheel_count: 1
+  drive_train_front_rear: MyString
+  engine_description: MyString
+  engine_displacement: 1
+  engine_displacement_unit: MyString
+  engine_block_style: MyString
+  engine_cyclinder_count: 1
+  engine_valve_count: 1
+  engine_fuel_type: MyString
+  engine_fuel_intake: MyString
+  engine_camshaft: MyString
+  exterior_color: MyString
+  exterior_base_color: MyString
+  exterior_color_code: MyString
+  exterior_color_finish: MyString
+  trim_level: MyString
+  price: 9.99
+  year: 1
+  days_on_lot: 1
+  on_lot_at: 2018-01-16 16:52:09
+  status: MyString
+  interior_color: MyString
+  interior_fabric: MyString
+  model_type: MyString
+  new_or_used: MyString
+  features: MyText
+
+two:
+  make: MyString
+  model: MyString
+  miles: 1
+  vin: MyString
+  body_description: MyString
+  body_style: MyString
+  body_door_count: 1
+  city_mpg: 1
+  highway_mpg: 1
+  classification: MyString
+  drive_train_description: MyString
+  drive_train_type: MyString
+  drive_train_wheel_count: 1
+  drive_train_front_rear: MyString
+  engine_description: MyString
+  engine_displacement: 1
+  engine_displacement_unit: MyString
+  engine_block_style: MyString
+  engine_cyclinder_count: 1
+  engine_valve_count: 1
+  engine_fuel_type: MyString
+  engine_fuel_intake: MyString
+  engine_camshaft: MyString
+  exterior_color: MyString
+  exterior_base_color: MyString
+  exterior_color_code: MyString
+  exterior_color_finish: MyString
+  trim_level: MyString
+  price: 9.99
+  year: 1
+  days_on_lot: 1
+  on_lot_at: 2018-01-16 16:52:09
+  status: MyString
+  interior_color: MyString
+  interior_fabric: MyString
+  model_type: MyString
+  new_or_used: MyString
+  features: MyText
