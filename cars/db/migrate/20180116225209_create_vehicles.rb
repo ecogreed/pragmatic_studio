@@ -19,7 +19,7 @@ class CreateVehicles < ActiveRecord::Migration[5.1]
       t.integer :engine_displacement
       t.string :engine_displacement_unit
       t.string :engine_block_style
-      t.integer :engine_cyclinder_count
+      t.integer :engine_cylinder_count
       t.integer :engine_valve_count
       t.string :engine_fuel_type
       t.string :engine_fuel_intake
@@ -31,7 +31,6 @@ class CreateVehicles < ActiveRecord::Migration[5.1]
       t.string :trim_level
       t.decimal :price
       t.integer :year
-      t.integer :days_on_lot
       t.datetime :on_lot_at
       t.string :status
       t.string :interior_color

@@ -13,3 +13,40 @@
  *= require_tree .
  *= require_self
  */
+/
+
+@import "colors";
+article.customer {
+  img  {
+    float: left;
+    margin: 0 20px;
+  }
+}
+
+header#page-header{
+  color:$text-color;
+  background:$background-color;
+  padding: 5px;
+  border-bottom: 5px solid #256BF5;
+}
+  
+footer#page-footer{
+    color:$text-color;
+    background:$background-color;
+    padding: 5px;
+    border-top: 5px solid #256BF5;
+}
+
+aside#sidebar{
+  width: 200px;
+  float: right;
+  color: $text-color;
+  background: $background-color;
+}
+
+aside#search-bar{
+  width: 200px;
+  float: right;
+  outline: $background-color;
+  background: $text-color;
+}

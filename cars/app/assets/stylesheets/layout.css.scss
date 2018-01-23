@@ -1,0 +1,29 @@
+@import "colors";
+
+header#page-header{
+  color: $text-color;
+  background: $background-color;
+  padding: 5px;
+  border-bottom: 5px solid #256BF5;
+}
+  
+footer#page-footer{
+    color: $text-color;
+    background: $background-color;
+    padding: 5px;
+    border-top: 5px solid #256BF5;
+}
+
+aside#sidebar{
+  width: 200px;
+  float: right;
+  color: $text-color;
+  background: #256BF5;
+}
+
+aside#search-bar{
+  width: 200px;
+  float: right;
+  outline: $background-color;
+  background: $text-color;
+}

@@ -1,0 +1,17 @@
+<aside id="sidebar">
+    <div id="search-bar" style="field-align: center;">
+        <%= form_tag  search_customers_path do %>
+        <input class="search full-width" id="searchbar" name="query" placeholder= "Search for Events" type= "text" autocomplete="off">
+        <% end %>
+    </div>
+    <nav>
+        <ul>
+            <li class="all-events">
+            <%= link_to 'All Events', root_path, class: 'button' %>
+          </li>
+          <li class="create-event">
+            <%= link_to 'Add New Event', new_event_path, class: 'button' %>
+        </ul>
+         </li>
+     </nav>
+</aside>

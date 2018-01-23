@@ -1,0 +1,17 @@
+<aside id="sidebar">
+    <div id="search-bar" style="field-align: center;">
+        <%= form_tag  search_vehicles_path do %>
+        <input class="search full-width" id="searchbar" name="query" placeholder= "Search for Vehicles" type= "text" autocomplete="off">
+        <% end %>
+    </div>
+    <nav>
+        <ul>
+            <li>
+                <%= link_to 'All Vehicles', root_path, class: 'button' %>
+            </li>
+            <li>
+                <%= link_to 'Add New Vehicle', new_vehicle_path, class: 'button' %>
+            </li>
+        </ul>
+    </nav>
+</aside>

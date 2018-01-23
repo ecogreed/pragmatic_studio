@@ -10,7 +10,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20180116225209) do
+ActiveRecord::Schema.define(version: 20180123001958) do
 
   create_table "vehicles", force: :cascade do |t|
     t.string "make"
@@ -31,7 +31,7 @@ ActiveRecord::Schema.define(version: 20180116225209) do
     t.integer "engine_displacement"
     t.string "engine_displacement_unit"
     t.string "engine_block_style"
-    t.integer "engine_cyclinder_count"
+    t.integer "engine_cylinder_count"
     t.integer "engine_valve_count"
     t.string "engine_fuel_type"
     t.string "engine_fuel_intake"

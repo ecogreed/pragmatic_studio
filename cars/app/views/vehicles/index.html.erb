@@ -1,10 +1,10 @@
 <h1> <%= pluralize(@vehicles.size, "Vehicle") %> in Inventory</h1>
-
 <ul>
   <% @vehicles.each do |vehicle| %>
     <h3><%= link_to(vehicle.title, vehicle_path(vehicle)) %></h3>
     <li><%= format_miles(vehicle) %></li>
     <li><%= format_price(vehicle) %></li>
-    <li> Arrived on lot <%= vehicle.on_lot_at %></li>
+    <li> Arrived on lot <%= vehicle.days_on_lot %> days ago</li>
   <% end %>
 </ul>
+

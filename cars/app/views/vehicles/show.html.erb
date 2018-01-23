@@ -2,22 +2,127 @@
   <header>
     <h1><%= @vehicle.title %></h1>
   </header>
-  <h2>Miles:<h2>
+  <h3>Miles:<h3>
   <p>
     <%= format_miles(@vehicle) %>
   </p>
   <h3>Arrived on Lot:</h3>
   <p>
-    <%= @vehicle.on_lot_at %>
+    <%= @vehicle.days_on_lot %>
   </p>
   <h3>Price:</h3>
   <p>
     <%= format_price(@vehicle) %>
   </p>
+  <h3>Vin#:</h3>
+  <p>
+    <%= @vehicle.vin %>
+  </p>
+  <h3>Body Description:</h3>
+  <p>
+    <%= @vehicle.body_description %>
+  </p>
+  <h3>Body Style:</h3>
+  <p>
+    <%= @vehicle.body_style %>
+  </p>
+  <p>
+    <%= @vehicle.trim_level %>
+  </p>
+  <h3>Doors:</h3>
+  <p>
+    <%= @vehicle.body_door_count %>
+  </p>
+  <h3>City MPG:</h3>
+  <p>
+    <%= @vehicle.city_mpg %>
+  </p>
+  <h3>Highway MPG:</h3>
+  <p>
+    <%= @vehicle.highway_mpg %>
+  </p>
+  <h3>Classification:</h3>
+  <p>
+    <%= @vehicle.classification %>
+  </p>
+  <h3>Drive Train:</h3>
+  <p>
+    <%= @vehicle.drive_train_description %>
+  </p>
+  <p>
+    <%= @vehicle.drive_train_type %>
+  </p>
+  <p>
+    <%= @vehicle.drive_train_wheel_count %>
+  </p>
+  <p>
+    <%= @vehicle.drive_train_front_rear %>
+  </p>
+  <h3>Engine:</h3>
+  <p>
+    <%= @vehicle.engine_description %>
+  </p>
+  <p>
+    <%= @vehicle.engine_displacement %>
+  </p>
+  <p>
+    <%= @vehicle.engine_displacement_unit %>
+  </p>
+  <p>
+    <%= @vehicle.engine_block_style %>
+  </p>
+  <p>
+    <%= @vehicle.engine_cylinder_count %>
+  </p>
+  <p>
+    <%= @vehicle.engine_valve_count %>
+  </p>
+  <p>
+    <%= @vehicle.engine_fuel_type %>
+  </p>
+  <p>
+    <%= @vehicle.engine_fuel_intake %>
+  </p>
+  <p>
+    <%= @vehicle.engine_camshaft %>
+  </p>
+  <h3> Exterior:</h3>
+  <p>
+    <%= @vehicle.exterior_color %>
+  </p>
+  <p>
+    <%= @vehicle.exterior_base_color %>
+  </p>
+  <p>
+    <%= @vehicle.exterior_color_code %>
+  </p>
+  <p>
+    <%= @vehicle.exterior_color_finish %>
+  </p>
+  <p>
+    <%= @vehicle.status %>
+  </p>
+  <h3>Interior:</h3>
+  <p>
+    <%= @vehicle.interior_color %>
+  </p>
+  <p>
+    <%= @vehicle.interior_fabric %>
+  </p>
+  <p>
+    <%= @vehicle.model_type %>
+  </p>
+  <p>
+    <%= @vehicle.new_or_used %>
+  </p>
+  <p>
+    <%= @vehicle.features %>
+  </p>
 </article>
 
 
 <nav>
-<%= link_to "All Vehicles", root_path %>  |
-<%= link_to "Edit", edit_vehicle_path(@vehicle) %>
+<%= link_to "All Movies", root_path %>  |
+<%= link_to "Edit", edit_vehicle_path(@vehicle) %> |
+<%= link_to "Delete", vehicle_path(@vehicle), method: :delete, data: {confirm: 'Are you sure?'} %>
 </nav>

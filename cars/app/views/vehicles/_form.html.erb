@@ -1,5 +1,9 @@
 <%= form_for(@vehicle) do |f| %>
   <p>
+    <%= f.label :year %><br/>
+    <%= f.number_field :year, default: 2018%>
+  </p>
+  <p>
     <%= f.label :make %><br/>
     <%= f.text_field :make, autofocus: true%>
   </p>
@@ -8,16 +12,140 @@
     <%= f.text_field :model %>
   </p>
   <p>
-    <%= f.label :year %><br/>
-    <%= f.number_field :year, default: 2018%>
+    <%= f.label :price %><br/>
+    <%= f.number_field :price, default: 0 %>
+  </p>
+  <p>
+    <%= f.label :miles %><br/>
+    <%= f.number_field :miles %>
   </p>
   <p>
     <%= f.label :date_arrived_on_lot %><br/>
     <%= f.datetime_select :on_lot_at %>
   </p>
   <p>
-    <%= f.label :price %><br/>
-    <%= f.number_field :price, default: 0 %>
+    <%= f.label :vin %><br/>
+    <%= f.text_field :vin %>
+  </p>
+  <p>
+    <%= f.label :body_description %><br/>
+    <%= f.text_field :body_description%>
+  </p>
+  <p>
+    <%= f.label :body_style %><br/>
+    <%= f.text_field :body_style %>
+  </p>
+  <p>
+    <%= f.label :body_door_count %><br/>
+    <%= f.number_field :body_door_count %>
+  </p>
+  <p>
+    <%= f.label :city_mpg %><br/>
+    <%= f.number_field :city_mpg %>
+  </p>
+  <p>
+    <%= f.label :highway_mpg %><br/>
+    <%= f.number_field :highway_mpg %>
+  </p>
+  <p>
+    <%= f.label :classification %><br/>
+    <%= f.text_field :classification %>
+  </p>
+  <p>
+    <%= f.label :drive_train_description %><br/>
+    <%= f.text_field :drive_train_description %>
+  </p>
+  <p>
+    <%= f.label :drive_train_type %><br/>
+    <%= f.number_field :drive_train_type %>
+  </p>
+  <p>
+    <%= f.label :drive_train_wheel_count %><br/>
+    <%= f.number_field :drive_train_wheel_count %>
+  </p>
+  <p>
+    <%= f.label :drive_train_front_or_rear %><br/>
+    <%= f.text_field :drive_train_front_rear %>
+  </p>
+  <p>
+    <%= f.label :engine_description %><br/>
+    <%= f.text_field :engine_description %>
+  </p>
+  <p>
+    <%= f.label :engine_displacement %><br/>
+    <%= f.number_field :engine_displacement %>
+  </p>
+  <p>
+    <%= f.label :engine_displacement_unit %><br/>
+    <%= f.text_field :engine_displacement_unit %>
+  </p>
+  <p>
+    <%= f.label :engine_block_style %><br/>
+    <%= f.text_field :engine_block_style %>
+  </p>
+  <p>
+    <%= f.label :engine_cylinder_count %><br/>
+    <%= f.number_field :engine_cyclinder_count %>
+  </p>
+  <p>
+    <%= f.label :engine_valve_count %><br/>
+    <%= f.number_field :engine_valve_count %>
+  </p>
+  <p>
+    <%= f.label :engine_fuel_type %><br/>
+    <%= f.text_field :engine_fuel_type %>
+  </p>
+  <p>
+    <%= f.label :engine_fuel_intake %><br/>
+    <%= f.text_field :engine_fuel_intake %>
+  </p>
+  <p>
+    <%= f.label :engine_camshaft %><br/>
+    <%= f.text_field :engine_camshaft %>
+  </p>
+  <p>
+    <%= f.label :exterior_color %><br/>
+    <%= f.text_field :exterior_color %>
+  </p>
+  <p>
+    <%= f.label :exterior_base_color %><br/>
+    <%= f.text_field :exterior_base_color %>
+  </p>
+  <p>
+    <%= f.label :exterior_color_code %><br/>
+    <%= f.text_field :exterior_color_code %>
+  </p>
+  <p>
+    <%= f.label :exterior_color_finish %><br/>
+    <%= f.text_field :exterior_color_finish %>
+  </p>
+  <p>
+    <%= f.label :trim_level %><br/>
+    <%= f.text_field :trim_level %>
+  </p>
+  <p>
+    <%= f.label :status %><br/>
+    <%= f.text_field :status %>
+  </p>
+  <p>
+    <%= f.label :interior_color %><br/>
+    <%= f.text_field :interior_color %>
+  </p>
+  <p>
+    <%= f.label :interior_fabric %><br/>
+    <%= f.text_field :interior_fabric %>
+  </p>
+  <p>
+    <%= f.label :model_type %><br/>
+    <%= f.text_field :model_type %>
+  </p>
+  <p>
+    <%= f.label :new_or_used %><br/>
+    <%= f.text_field :new_or_used %>
+  </p>
+  <p>
+    <%= f.label :features %><br/>
+    <%= f.text_field :features %>
   </p>
   <p>
     <%= f.submit %>
