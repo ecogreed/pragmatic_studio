@@ -2,7 +2,7 @@
 <ul>
   <% @vehicles.each do |vehicle| %>
     <h3><%= link_to(vehicle.title, vehicle_path(vehicle)) %></h3>
-    <li><%= format_miles(vehicle) %></li>
+    <li><%= vehicle.miles %></li>
     <li><%= format_price(vehicle) %></li>
     <li> Arrived on lot <%= vehicle.days_on_lot %> days ago</li>
   <% end %>
